@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../Images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-title {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -300px;
+}
+
+/* Rest of your CSS styles... */
+
+.letter {
+  display: inline-block;
+  transition: transform 0.2s linear;
+  position: relative;
+}
+
+.letter.scattered {
+  transform: translate3d(calc(40px * var(--x)), calc(40px * var(--y)), 0);
+}
+
+.letter:hover {
+  --x: -0.8;
+  --y: -0.8;
+}
+
+.letter {
+  color: #333;
+  text-shadow: 0 0 9px #ffffff;
+}
+
+.letter:hover {
+  text-shadow: 10px 0 20px #c93a3a;
+}
+
+/* Add more specific styling for individual letters if desired */
+.letter:nth-child(1) {
+  color: #c93a3a;
+}
+.letter:nth-child(2) {
+  color: #ffffff;
+}
+.letter:nth-child(3) {
+  color: #c93a3a;
+}
+.letter:nth-child(4) {
+  color: #ffffff;
+}
+.letter:nth-child(5) {
+  color: #c93a3a;
+}
+.letter:nth-child(6) {
+  color: #ffffff;
+}
+.letter:nth-child(7) {
+  color: #c93a3a;
+}
+.letter:nth-child(8) {
+  color: #ffffff;
+}
+.letter:nth-child(9) {
+  color: #c93a3a;
+}
+
+@media screen and (max-width: 768px) {
+  .letter {
+    display: inline-block;
+    transition: transform 0.2s linear;
+    position: relative;
+    font-size: 60px;
+    text-shadow: 0 0 4px #000000;
+  }
+
+  .overlay input {
+    width: 80%;
+    height: 50px; /* Adjust the height to your desired size */
+    border: 2px solid  #c93a3a;
+    padding: 7px;
+    font-size: 18px;
+  }
+
+  .letter:hover {
+    --x: -0.4;
+    --y: -0.4;
+  }
+
+  .letter:hover {
+    text-shadow: 6px 0 10px #c93a3a;
+  }
+
+  .portfolio-title {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -190px;
+    z-index: 0;
+  }
+}

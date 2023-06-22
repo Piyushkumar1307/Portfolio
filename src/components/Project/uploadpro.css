@@ -1,0 +1,43 @@
+.upload-project {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .upload-project h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-project form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upload-project label {
+    margin-bottom: 10px;
+  }
+  
+  .upload-project input,
+  .upload-project textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .upload-project button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .upload-project button:hover {
+    background-color: #45a049;
+  }
+  

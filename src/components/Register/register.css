@@ -1,0 +1,90 @@
+.registration-form {
+    width: 350px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .registration-form .password-container{
+    position: relative;
+  }
+
+  .registration-form .password-toggle {
+    position: absolute;
+    top: 20%;
+    right: -5px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .registration-form button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .registration-form button[type="submit"] {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .registration-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .auth-link {
+    
+    bottom: 0;
+    right: 0;
+    margin-top: 20px; /* Add some margin to adjust spacing */
+  }
+  
+  .auth-link a {
+    color: #0000ff; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  @media screen and (max-width: 768px){
+    .registration-form { 
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+
+    }
+  }

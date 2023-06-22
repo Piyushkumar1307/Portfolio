@@ -1,0 +1,108 @@
+.auth-form {
+    width: 400px;
+    height: 260px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    position: relative; 
+    flex-direction: column;
+  }
+  
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Add this property to include padding and border in the width calculation */
+  }
+  
+  .auth-form .password-container {
+    position: relative;
+  }
+  
+  .auth-form .show-password-btn {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-form button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .auth-form button[type="submit"] {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .auth-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .auth-form button.shift-left {
+    
+    position: relative;
+    
+  }
+  
+  .auth-form button.shift-right {
+    position: relative;
+
+  }
+  
+  .auth-form button.shift-left:hover {
+    transform: translateX(-105%);
+  }
+  
+  .register-link {
+    
+    bottom: 0;
+    right: 0;
+    margin-top: 20px; /* Add some margin to adjust spacing */
+  }
+  
+  .register-link a {
+    color: #0000ff; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  @media screen and (max-width: 768px){
+    .auth-form { 
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+
+    }
+  }
+  
+  

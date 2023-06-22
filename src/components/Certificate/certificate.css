@@ -1,0 +1,23 @@
+/* certificate.css */
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.certificate-container {
+  background-color: #2e2bc7; /* Change the background color to gray */
+}
+
+.certificate {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.certificate-heading {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Add your custom styles below */
+
