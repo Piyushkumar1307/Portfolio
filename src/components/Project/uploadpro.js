@@ -20,7 +20,7 @@ const Uploadpro = () => {
       formData.append('projectImage', projectImage);
       formData.append('projectLink', projectLink);
 
-      await axios.post('http://localhost:5000/projects', formData, {
+      await axios.post('https://portfolio-backend-em5j.vercel.app/projects', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -12,7 +12,7 @@ const Certificate = () => {
 
   const fetchCertificates = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/certificates');
+      const response = await axios.get('https://portfolio-backend-em5j.vercel.app/certificates');
       setCertificates(response.data);
     } catch (error) {
       console.error('Error fetching certificates:', error);

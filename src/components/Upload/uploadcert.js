@@ -29,7 +29,7 @@ const UploadCert = () => {
       formData.append('certificateDetails', certificateDetails);
       formData.append('image', selectedImage);
 
-      await axios.post('http://localhost:5000/certificates', formData, {
+      await axios.post('https://portfolio-backend-em5j.vercel.app/certificates', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
